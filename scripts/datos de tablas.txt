@@ -3,3 +3,7 @@ Insertar datos DML - Data Manipulation Language
 INSERT INTO authors (name, birth_year) VALUES
 ('Gabriel García Márquez', 1927),
 ('J.K. Rowling', 1965);
+
+INSERT INTO books (title, author_id, genre, year_published, available_copies) VALUES
+('Cien años de soledad', 1, 'Ficción', 1967, 3),
+('Harry Potter y la piedra filosofal', 2, 'Fantasía', 1997, 5);
