@@ -1,7 +1,17 @@
-Obtener libros que se han prestado actualmente:
+1. Obtener libros que se han prestado actualmente:
+
+USE biblioteca_bd_ma;
 
 SELECT b.title, u.name, l.loan_date, l.return_date
 FROM loans l
 JOIN books b ON l.book_id = b.book_id
 JOIN users u ON l.user_id = u.user_id
 WHERE l.return_date > CURDATE();
+
+
+2. cantidad de libros por generos:
+
+USE biblioteca_bd_ma;
+SELECT genre, COUNT(*) AS total_books
+FROM books
+GROUP BY genre;

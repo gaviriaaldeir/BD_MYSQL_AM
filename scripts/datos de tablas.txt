@@ -1,6 +1,5 @@
 Insertar datos DML - Data Manipulation Language
 
-USE biblioteca_bd_ma;
 
 INSERT INTO authors (name, birth_year) VALUES
 ('Gabriel García Márquez', 1927),
