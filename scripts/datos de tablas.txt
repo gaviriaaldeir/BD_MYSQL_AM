@@ -1,5 +1,7 @@
 Insertar datos DML - Data Manipulation Language
 
+USE biblioteca_bd_ma;
+
 INSERT INTO authors (name, birth_year) VALUES
 ('Gabriel García Márquez', 1927),
 ('J.K. Rowling', 1965);
@@ -14,4 +16,5 @@ INSERT INTO users (name, email) VALUES
 
 INSERT INTO loans (book_id, user_id, loan_date, return_date) VALUES
 (1, 1, '2023-08-01', '2023-08-15'),
-(2, 2, '2023-08-10', '2023-08-24');
+(2, 2, '2023-08-10', '2023-08-24'),
+(3, 3, '2024-09-02', '2024-09-20');
