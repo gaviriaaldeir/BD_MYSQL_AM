@@ -7,3 +7,7 @@ INSERT INTO authors (name, birth_year) VALUES
 INSERT INTO books (title, author_id, genre, year_published, available_copies) VALUES
 ('Cien años de soledad', 1, 'Ficción', 1967, 3),
 ('Harry Potter y la piedra filosofal', 2, 'Fantasía', 1997, 5);
+
+INSERT INTO users (name, email) VALUES
+('Juan Pérez', 'juan.perez@example.com'),
+('Ana López', 'ana.lopez@example.com');
