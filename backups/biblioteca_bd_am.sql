@@ -1,6 +1,7 @@
 USE biblioteca_bd_ma;
-SELECT b.title, u.name, l.loan_date, l.return_date
-FROM loans l
-JOIN books b ON l.book_id = b.book_id
-JOIN users u ON l.user_id = u.user_id
-WHERE l.return_date > CURDATE();
+SELECT a.name, COUNT(b.book_id) AS total_books
+FROM authors a
+JOIN books b ON a.author_id = b.author_id
+GROUP BY a.name
+HAVING COUNT(b.book_id) > 1;
+
