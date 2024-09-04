@@ -1,7 +1,5 @@
-USE biblioteca_bd_ma;
-SELECT a.name, COUNT(b.book_id) AS total_books
-FROM authors a
-JOIN books b ON a.author_id = b.author_id
-GROUP BY a.name
-HAVING COUNT(b.book_id) > 1;
-
+use biblioteca_bd_ma;
+SELECT u.name, COUNT(l.loan_id) AS total_loans
+FROM users u
+LEFT JOIN loans l ON u.user_id = l.user_id
+GROUP BY u.name;
