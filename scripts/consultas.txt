@@ -42,4 +42,12 @@ JOIN loans l ON b.book_id = l.book_id
 GROUP BY b.title;
 
 
+6. contar el numero de libros por  autor:
+
+SELECT a.name, COUNT(b.book_id) AS total_books
+FROM authors a
+JOIN books b ON a.author_id = b.author_id
+GROUP BY a.name;
+
+
 
